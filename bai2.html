@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(x) {
+        let arr = [25, 66, 44, 88, 33, 11, 22, 77];
+        x = prompt('Enter number: ');
+        for (let i = 0; i < arr.length; i++) {
+            if (x == arr[i]) {
+                arr.splice(i, 1);
+            }
+        }
+        console.log(arr);
+    }
+
+    tryRemoveFromArray();
+</script>
+</body>
+</html>
